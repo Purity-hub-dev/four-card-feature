@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: hsl(34, 97%, 64%);
+  --cyan: hsl(180, 62%, 55%);
+  --blue: hsl(212, 86%, 64%);
+  --red: hsl(0, 78%, 62%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --font-size: 15px;
+  --font-family: 'Poppins', sans-serif;
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+body{
+  font-family: var(--font-family);
+}
+.headies{
+  margin: 50px 0;
+  text-align: center;
+  /* margin: auto; */
+}
+.headies h1, h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+.headies h1{
+  font-weight: 600;
+}
+.headies h2{
+  font-weight: 200;
+  color: var(--grayish-blue);
+}
+.headies p{
+  color: var(--grayish-blue);
+  font-size: 15px;
+  width: 450px;
+  margin: auto;
+  /* text-align: center; */
+}
+.grid-container{
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+.box1, .box2, .box3, .box4{
+    width: 355px;
+    height: 300px;
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+.box1 p, .box2 p, .box3 p, .box4 p{
+  padding-top: 15px;
+  line-height: 1.5rem;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: 200;color: var(--grayish-blue);
+}
+.box1 {
+  background: var(--very-light-gray);
+  border-top: 3px solid var(--red);
+  grid-area: 1/2/3/3;
+}
+.box1, .box2, .box3, .box4, h3{
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 600;
+}
+.build{
+  margin: 80px 0;
+  float: right;
+}
+.box2{
+  background: var(--very-light-gray);
+  border-top: 3px solid var(--orange);
+  grid-area: 3/2/5/3;
+}
+.eva-bulb {
+  margin: 80px 0;
+  float: right;
+}
+.box3{
+  background: var(--very-light-gray);
+  border-top: 3px solid var(--cyan);
+  grid-area: 2/1/4/2;
+}
+.super {
+  margin: 80px 0;
+  float: right;
+}
+.box4 {
+  background: var(--very-light-gray);
+  border-top: 3px solid var(--blue);
+  grid-area: 2/3/4/4;
+}
+.calc {
+  margin: 80px 0;
+  float: right;
+}
+
+@media(max-width: 500px){
+  .box1{
+  width: 320px;
+  grid-area: 1/1/2/2;
+}
+.box2 {
+  width: 320px;
+  grid-area: 3/1/5/2;
+  grid-row: 2;
+}
+.box3 {
+  width: 320px;
+  grid-area: 2/1/4/2;
+  grid-row: 3;
+}
+.box4 {
+  width: 320px;
+  grid-area: 4/1/6/2;
+}
+.headies h1, h2{
+  font-size: 26px;
+}
+.headies p{
+  font-size: 18px;
+  margin-top: 20px;
+  width: 350px;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+}
